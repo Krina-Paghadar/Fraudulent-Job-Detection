@@ -1,0 +1,11 @@
+{
+    "random_state": 42,
+    "split_method": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "selected_fold": 0,
+    "train_size": 14304,
+    "test_size": 3576,
+    "unique_text_groups": 15872,
+    "group_overlap": 0,
+    "target": "fraudulent"
+}
