@@ -1,0 +1,26 @@
+{
+  "name": "fraudulent-job-detection-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Research website + live risk checker for the leakage-safe fraudulent job detection ML pipeline (EMSCAD).",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "verify-model": "node --experimental-strip-types --no-warnings scripts/verify-model.mjs",
+    "audit": "python scripts/audit_artifacts.py"
+  },
+  "dependencies": {
+    "framer-motion": "11.11.17",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "typescript": "5.6.3",
+    "vite": "5.4.11"
+  }
+}

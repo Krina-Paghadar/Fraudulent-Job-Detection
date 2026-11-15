@@ -1,0 +1,361 @@
+{
+ "result": "PASS",
+ "n_checks": 71,
+ "checks": [
+  {
+   "check": "artifact exists: notebooks/01_dataset_understanding.ipynb",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/final_svm_model.json",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/javascript_verification.json",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/final_test_bootstrap_ci.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/oof_threshold_selection.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/final_split_manifest.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/final_test_scores.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/final_svm_test_metrics.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/split_metadata.json",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/oof_unweighted_svm_scores.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/all_model_cv_results.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "artifact exists: results/corrected_scaled_model_comparison.csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "website model == results/final_svm_model.json (sha256)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "website verification set == results/javascript_verification.json (sha256)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "model threshold == frozen -0.3040546139198351",
+   "pass": true,
+   "detail": "-0.3040546139198351"
+  },
+  {
+   "check": "model text_fields order",
+   "pass": true,
+   "detail": "['title', 'company_profile', 'description', 'requirements', 'benefits']"
+  },
+  {
+   "check": "model sizes",
+   "pass": true,
+   "detail": "100000/100000/100000"
+  },
+  {
+   "check": "site test metric accuracy == csv",
+   "pass": true,
+   "detail": "0.9835011185682326 vs 0.9835011185682326"
+  },
+  {
+   "check": "site test metric balanced_accuracy == csv",
+   "pass": true,
+   "detail": "0.8569122110888217 vs 0.8569122110888217"
+  },
+  {
+   "check": "site test metric precision == csv",
+   "pass": true,
+   "detail": "0.9253731343283582 vs 0.9253731343283582"
+  },
+  {
+   "check": "site test metric recall == csv",
+   "pass": true,
+   "detail": "0.7167630057803468 vs 0.7167630057803468"
+  },
+  {
+   "check": "site test metric f1 == csv",
+   "pass": true,
+   "detail": "0.8078175895765473 vs 0.8078175895765473"
+  },
+  {
+   "check": "site test metric pr_auc == csv",
+   "pass": true,
+   "detail": "0.8517953391809086 vs 0.8517953391809086"
+  },
+  {
+   "check": "site test metric roc_auc == csv",
+   "pass": true,
+   "detail": "0.9778043514817765 vs 0.9778043514817765"
+  },
+  {
+   "check": "site CI accuracy == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CI balanced_accuracy == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CI precision == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CI recall == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CI f1 == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CI pr_auc == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CI roc_auc == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CM recomputed from final_test_scores.csv",
+   "pass": true,
+   "detail": "TN3393 FP10 FN49 TP124"
+  },
+  {
+   "check": "site CM == recomputed",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site CM threshold == frozen",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "precision/recall from scores == csv",
+   "pass": true,
+   "detail": "0.925373/0.716763"
+  },
+  {
+   "check": "explorer test_scores.json == final_test_scores.csv",
+   "pass": true,
+   "detail": "n=3576"
+  },
+  {
+   "check": "explorer threshold == frozen",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "error csv FP/FN == CM",
+   "pass": true,
+   "detail": "FP10 FN49"
+  },
+  {
+   "check": "site error list sizes == csv",
+   "pass": true,
+   "detail": "10/49"
+  },
+  {
+   "check": "OOF row Balanced Logistic Regression == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "OOF row Balanced Linear SVM == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "OOF row Unweighted Linear SVM == csv",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "manifest: 14,304 train / 3,576 test",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "manifest: zero group overlap",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "manifest: 693 / 173 fraud",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "site split == split_metadata.json",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Majority baseline (all genuine) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Majority baseline (all genuine) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Rule baseline (no profile & no logo) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": "rule baseline: notebook cell output, no CSV"
+  },
+  {
+   "check": "CV table Rule baseline (no profile & no logo) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": "rule baseline: notebook cell output, no CSV"
+  },
+  {
+   "check": "CV table Logistic Regression (unweighted) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Logistic Regression (unweighted) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Logistic Regression (balanced) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Logistic Regression (balanced) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Linear SVM (unweighted) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Linear SVM (unweighted) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Linear SVM (balanced) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Linear SVM (balanced) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Multinomial Naive Bayes f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Multinomial Naive Bayes pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Complement Naive Bayes f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Complement Naive Bayes pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Metadata-only LR (scaled) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Metadata-only LR (scaled) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Metadata GBM f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Metadata GBM pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Combined text + metadata LR (scaled) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Combined text + metadata LR (scaled) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Combined LR, no missing indicators (scaled) f1 traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "CV table Combined LR, no missing indicators (scaled) pr_auc traced to a CV file (not the test set)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no superseded (unscaled) LR results on site",
+   "pass": true,
+   "detail": "[]"
+  }
+ ]
+}

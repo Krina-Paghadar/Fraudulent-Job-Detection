@@ -1,0 +1,44 @@
+[
+ {
+  "name": "Commissioning Machinery Assistant (CMA)",
+  "label": "genuine",
+  "outcome": "clear",
+  "note": "Real EMSCAD posting labelled genuine. The model scores it well below the threshold.",
+  "score": -1.3445,
+  "fields": {
+   "title": "Commissioning Machinery Assistant (CMA)",
+   "company_profile": "Valor Services provides Workforce Solutions that meet the needs of companies across the Private Sector, with a special focus on the Oil &amp; Gas Industry. Valor Services will be involved with you throughout every step of the hiring process and remain in contact with you all the way through the final step of signing of the employment contract with your new employer. Valor Services was founded with the vision of employing the unique skills, experiences, and qualities of America’s finest veterans to provide Private Sector companies with precise and concerted value-added services – and America’s finest Veterans with an optimized career opportunity.We are eager to get the word out to veterans that there are ample opportunities for employment in the private sector and that you are the ideal candidates to fill those positions. Valor Services Your Success is Our Mission. ™ ",
+   "description": "Our client, located in Houston, is actively seeking an experienced Commissioning Machinery Assistant that possesses strong supervisory skills and has an attention to detail. A strong dedication to safety is a must. The ideal candidate will execute all activities while complying with quality requirements and health, environmental, and safety regulations.",
+   "requirements": "Implement pre-commissioning and commissioning procedures for rotary equipment.Execute all activities with subcontractor’s assigned crew that pertains to the discipline.Ensure effective utilization of commissioning manpower and consumables.Ensure the execution of vendor specialists' field activities with the assigned resources from the sub-contractor per vendor’s representative plans.Carry out equipment inspections with client representatives and ensure proper certification is produced.Prepare forms for all pending tests and submit signed certificates for final hand over to the certification engineer for QA and QC.Coordinate in the field with vendor representatives.Keep records of all activities.Ensure that safety practices are strictly followed during the execution of activities.Report progress and constraints to the mechanical supervisor.Possible authorization by site manager to receive or issue a Permit To Work according to project Permit To Work procedures.Assist supervisor to expedite pending punch-list items in accordance with the commissioning manager’s priorities.Assist supervisor to coordinate and supervise construction-support activities during pre-commissioning and commissioning activities.Company Overview:Our client is a premiere engineering, construction, and procurement company that executes large-scale projects internationally.",
+   "benefits": ""
+  }
+ },
+ {
+  "name": "Agency Sales Managers $150-$175,000/yr",
+  "label": "fraudulent",
+  "outcome": "flagged",
+  "note": "Real EMSCAD posting labelled fraudulent. The model flags it.",
+  "score": 0.9418,
+  "fields": {
+   "title": "Agency Sales Managers $150-$175,000/yr",
+   "company_profile": "We have aggressive growth plans in place for the coming years. We provide a much needed service in facilitating the growth of small and medium size business with innovative financing products to their clients.We, at Oak Tree Financing, commit our energies, intellect and knowledge to helping small and medium size business owners and entrepreneurs with extraordinary financing solutions to clients. We believe in providing the highest possible level of service and delivering superior results. We are committed to their financial well-being. With 67% of the population having No Credit or Bad Credit our financing products have helped business owners increase their sales on average by 30%.",
+   "description": "We provide No Credit Check Financing to customers of Small and Medium size Businesses and can help 90% of the industries from Auto Mechanics to Dentists and Lawyers.We are seeking skilled Account Managers to grow with us and help us achieve our goals in this new and exciting industry.This is designed as a long-term position for an entrepreneurial individual to really build their book of business, along with their income.Our people enjoy a flexible work environment. High earnings with great incentives like corporate retreats and quick advancement opportunities.",
+   "requirements": "Experience and Skills  Required- Minimum of 3 years of sales experience- Ability to work in a home office environment- Exceptional speaking, writing, and negotiation skills- You must be a motivated self starter and instil that others- College degree",
+   "benefits": "We Provide- Complete online training and office support- Flexible working environment- An exciting and lucrative opportunity for those with a proven results background- Rapid advancement for those highly motivated- Average yearly income of $150-$175,000 based on our straight commission compensation model"
+  }
+ },
+ {
+  "name": "Customer service/ Data Entry",
+  "label": "fraudulent",
+  "outcome": "missed",
+  "note": "Real EMSCAD posting labelled fraudulent that the model MISSES (a false negative) — shown to illustrate the model's limits.",
+  "score": -0.6379,
+  "fields": {
+   "title": "Customer service/ Data Entry ",
+   "company_profile": "",
+   "description": "Customer Service SpecialistWe are currently looking for talented and creative individuals to continue growing the company. If you're looking to work in an organization where you can make a long-term home, and flex both your technical and creative skills, this may be the role for you! We pride ourselves on a work hard/play hard mentality and friendly, team-based culture.We're searching for a full-time Customer Support Specialist with strong customer service background, excellent communication skills and outgoing personality.Primary ResponsibilitiesRespond to incoming calls and e-mail / mail requestsContact current customersVerify payment requests over the telephoneDuring low volume intervals perform customer follow-ups, research escalated issues, and complete special projects",
+   "requirements": "Skills/RequirementsSome customer support experience preferred, but will train the right candidateMinimum high school diploma or equivalentAbility to multi-taskPositive attitude and friendly telephone demeanorProfessional written and communication skillsBasic knowledge of computers",
+   "benefits": "Benefits &amp; CompensationExcellent health insurance including medical, dental and vision401K with matching planPaid holidays, vacation and sick daysCompensation:Hourly., DOE "
+  }
+ }
+]

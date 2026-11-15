@@ -1,4 +1,4 @@
-﻿# Python environments
+# Python environments
 .venv/
 venv/
 env/
@@ -11,8 +11,10 @@ __pycache__/
 # Jupyter temporary files
 .ipynb_checkpoints/
 
-# Dataset (keep locally, do not upload)
-data/
+# Dataset (keep locally, do not upload).
+# Leading slash = only the top-level data/ folder. A bare `data/` would also ignore
+# website/src/data/ and website/public/data/, which the website needs.
+/data/
 
 # Large detailed error-analysis export
 results/test_error_analysis.csv
@@ -40,3 +42,6 @@ desktop.ini
 
 # Logs
 *.log
+
+# Local audit backups (not part of the project)
+_backups/

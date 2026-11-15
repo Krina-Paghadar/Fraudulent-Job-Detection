@@ -1,0 +1,101 @@
+/* =========================================================================
+   Glass layer — loaded LAST, re-skins existing surfaces without changing layout.
+   1. Wallpaper: the existing violet/teal glows + a faint dot grid for the glass to sit on.
+   2. Frosted panels: backdrop blur + saturate over a dark tint (keeps text readable).
+   3. Specular rim: a bright edge top-left, softer catch-light bottom-right.
+   4. Chromatic edge: a very faint prism fringe on the top-left rim.
+   5. Pointer sheen: a soft highlight that follows the cursor (set by main.tsx; desktop only).
+   Only opacity/transform animate; the wallpaper never moves while scrolling.
+   ========================================================================= */
+
+:root {
+  --glass-tint: rgba(255, 255, 255, 0.07);
+  --glass-tint-2: rgba(255, 255, 255, 0.015);
+  --glass-dark: rgba(12, 14, 24, 0.58);
+  --glass-rim: rgba(255, 255, 255, 0.85);
+  --glass-inset: inset 0 1px 0.5px rgba(255, 255, 255, 0.28), inset 0 -1px 0.5px rgba(255, 255, 255, 0.06),
+    inset 0 0 24px rgba(255, 255, 255, 0.03);
+  --glass-drop: 0 24px 60px -20px rgba(0, 0, 0, 0.65), 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* 1. wallpaper: dot grid on top of the existing ambient glows */
+.ambient {
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1.3px) 0 0 / 28px 28px,
+    radial-gradient(1200px 800px at 8% -5%, rgba(99, 102, 241, 0.2), transparent 60%),
+    radial-gradient(1100px 760px at 100% 12%, rgba(34, 211, 238, 0.14), transparent 58%),
+    radial-gradient(900px 700px at 85% 95%, rgba(45, 212, 191, 0.08), transparent 60%),
+    var(--bg-0);
+}
+
+/* 2. frosted material */
+.card, .nav-inner, .stage, .glass {
+  position: relative;
+  isolation: isolate;
+  border-color: transparent;
+  background:
+    radial-gradient(420px circle at var(--mx, -500px) var(--my, -500px), rgba(255, 255, 255, 0.07), transparent 60%),
+    linear-gradient(160deg, var(--glass-tint), var(--glass-tint-2) 55%),
+    var(--glass-dark);
+  box-shadow: var(--glass-inset), var(--glass-drop);
+  -webkit-backdrop-filter: blur(26px) saturate(160%);
+  backdrop-filter: blur(26px) saturate(160%);
+}
+.nav-inner { background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02) 60%), rgba(10, 12, 20, 0.62); }
+
+/* 3. specular rim (a 1px ring drawn with a mask, so it never covers content) */
+.card::before, .nav-inner::before, .stage::before, .glass::before {
+  content: "";
+  position: absolute; inset: 0; z-index: 0;
+  border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(135deg, var(--glass-rim) 0%, rgba(255, 255, 255, 0.28) 14%, rgba(255, 255, 255, 0.06) 38%,
+    rgba(255, 255, 255, 0.04) 64%, rgba(255, 255, 255, 0.22) 90%, rgba(255, 255, 255, 0.45) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.55;
+}
+
+/* 4. chromatic edge — a faint prism fringe, top-left only */
+.card::after, .nav-inner::after, .glass::after {
+  content: "";
+  position: absolute; inset: 0; z-index: 0;
+  border-radius: inherit; padding: 2px; pointer-events: none;
+  background: conic-gradient(from 225deg at 50% 50%, transparent 0deg, rgba(255, 120, 220, 0.4) 30deg,
+    rgba(255, 214, 110, 0.35) 52deg, rgba(120, 255, 200, 0.4) 74deg, rgba(110, 200, 255, 0.45) 96deg,
+    transparent 130deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.22;
+  mix-blend-mode: screen;
+}
+
+/* status colours keep their meaning on top of the glass */
+.result-fraud { box-shadow: var(--glass-inset), var(--glass-drop), inset 0 0 0 1px rgba(251, 106, 106, 0.35); }
+.result-safe { box-shadow: var(--glass-inset), var(--glass-drop), inset 0 0 0 1px rgba(52, 211, 153, 0.35); }
+
+/* inputs: recessed glass */
+.field-input {
+  background: rgba(5, 7, 12, 0.55);
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+.field-input:focus { border-color: rgba(167, 139, 250, 0.7); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.45), 0 0 0 3px rgba(139, 92, 246, 0.18); }
+
+/* chips and ghost buttons: thin lens glass */
+.chip, .btn-ghost {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.03));
+  box-shadow: inset 0 1px 0.5px rgba(255, 255, 255, 0.3), 0 4px 14px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(14px) saturate(170%);
+  backdrop-filter: blur(14px) saturate(170%);
+}
+/* primary button: keep the brand gradient, add a glass highlight */
+.btn-primary { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -2px 6px rgba(0, 0, 0, 0.18), 0 10px 30px -8px rgba(124, 92, 246, 0.55); }
+
+/* hover lift for cards that already opt into it */
+.card-hover:hover { box-shadow: var(--glass-inset), 0 30px 70px -20px rgba(0, 0, 0, 0.7); }
+
+@media (prefers-reduced-transparency: reduce) {
+  .card, .nav-inner, .stage, .chip, .btn-ghost { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--bg-2); }
+}

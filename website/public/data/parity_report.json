@@ -1,0 +1,24 @@
+{
+ "generated": "2026-11-14T19:07:33.090Z",
+ "node": "v22.23.4",
+ "tolerance": 1e-9,
+ "suites": [
+  {
+   "name": "held-out reference (results/javascript_verification.json)",
+   "examples": 20,
+   "max_abs_diff": 9.103828801926284e-15,
+   "disagreements": 0,
+   "pass": true
+  },
+  {
+   "name": "edge cases (src/data/edge_reference.json)",
+   "examples": 14,
+   "max_abs_diff": 8.881784197001252e-16,
+   "disagreements": 0,
+   "pass": true
+  }
+ ],
+ "model_matches_results": true,
+ "blank_guard": true,
+ "result": "PASS"
+}

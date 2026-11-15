@@ -1,0 +1,1618 @@
+{
+ "dataset": {
+  "name": "EMSCAD (Employment Scam Aegean Dataset)",
+  "source": "Vidros et al., 2017 — University of the Aegean",
+  "years": "2012-2014",
+  "total": 17880,
+  "fraud": 866,
+  "genuine": 17014,
+  "fraudRate": 0.04843400447427293,
+  "textFields": [
+   "title",
+   "company_profile",
+   "description",
+   "requirements",
+   "benefits"
+  ],
+  "missingness": [
+   {
+    "field": "title",
+    "pctAll": 0.0,
+    "pctFraud": 0.0,
+    "pctGenuine": 0.0
+   },
+   {
+    "field": "location",
+    "pctAll": 1.9351230425055927,
+    "pctFraud": 2.1939953810623556,
+    "pctGenuine": 1.9219466321852592
+   },
+   {
+    "field": "department",
+    "pctAll": 64.61409395973155,
+    "pctFraud": 61.31639722863741,
+    "pctGenuine": 64.7819442811802
+   },
+   {
+    "field": "salary_range",
+    "pctAll": 83.95973154362416,
+    "pctFraud": 74.24942263279446,
+    "pctGenuine": 84.45397907605502
+   },
+   {
+    "field": "company_profile",
+    "pctAll": 18.501118568232663,
+    "pctFraud": 67.78290993071593,
+    "pctGenuine": 15.992711884330552
+   },
+   {
+    "field": "description",
+    "pctAll": 0.005592841163310962,
+    "pctFraud": 0.11547344110854503,
+    "pctGenuine": 0.0
+   },
+   {
+    "field": "requirements",
+    "pctAll": 15.078299776286354,
+    "pctFraud": 17.66743648960739,
+    "pctGenuine": 14.946514635006466
+   },
+   {
+    "field": "benefits",
+    "pctAll": 40.34675615212528,
+    "pctFraud": 41.916859122401846,
+    "pctGenuine": 40.266839073704006
+   },
+   {
+    "field": "employment_type",
+    "pctAll": 19.41275167785235,
+    "pctFraud": 27.829099307159353,
+    "pctGenuine": 18.984365816386504
+   },
+   {
+    "field": "required_experience",
+    "pctAll": 39.42953020134228,
+    "pctFraud": 50.23094688221709,
+    "pctGenuine": 38.879746091454095
+   },
+   {
+    "field": "required_education",
+    "pctAll": 45.32997762863535,
+    "pctFraud": 52.07852193995381,
+    "pctGenuine": 44.9864817209357
+   },
+   {
+    "field": "industry",
+    "pctAll": 27.421700223713646,
+    "pctFraud": 31.755196304849886,
+    "pctGenuine": 27.20112848242624
+   },
+   {
+    "field": "function",
+    "pctAll": 36.10178970917226,
+    "pctFraud": 38.91454965357968,
+    "pctGenuine": 35.95862231103797
+   }
+  ],
+  "flags": [
+   {
+    "flag": "telecommuting",
+    "pctFraud": 7.390300230946882,
+    "pctGenuine": 4.131891383566475
+   },
+   {
+    "flag": "has_company_logo",
+    "pctFraud": 32.67898383371824,
+    "pctGenuine": 81.91489361702128
+   },
+   {
+    "flag": "has_questions",
+    "pctFraud": 28.868360277136258,
+    "pctGenuine": 50.20571294228282
+   }
+  ]
+ },
+ "duplicates": {
+  "totalRows": 17880,
+  "uniqueGroups": 15872,
+  "singletonGroups": 15125,
+  "multiRowGroups": 747,
+  "rowsInMultiGroups": 2755,
+  "largestGroupSize": 375,
+  "sizeHistogram": [
+   {
+    "size": 1,
+    "groups": 15125
+   },
+   {
+    "size": 2,
+    "groups": 466
+   },
+   {
+    "size": 3,
+    "groups": 137
+   },
+   {
+    "size": 4,
+    "groups": 64
+   },
+   {
+    "size": 5,
+    "groups": 28
+   },
+   {
+    "size": 6,
+    "groups": 13
+   },
+   {
+    "size": 7,
+    "groups": 13
+   },
+   {
+    "size": 8,
+    "groups": 3
+   },
+   {
+    "size": 9,
+    "groups": 2
+   },
+   {
+    "size": 10,
+    "groups": 2
+   },
+   {
+    "size": 12,
+    "groups": 1
+   },
+   {
+    "size": 14,
+    "groups": 1
+   },
+   {
+    "size": 15,
+    "groups": 1
+   },
+   {
+    "size": 17,
+    "groups": 1
+   },
+   {
+    "size": 18,
+    "groups": 4
+   },
+   {
+    "size": 21,
+    "groups": 3
+   },
+   {
+    "size": 24,
+    "groups": 2
+   },
+   {
+    "size": 25,
+    "groups": 1
+   },
+   {
+    "size": 26,
+    "groups": 1
+   },
+   {
+    "size": 32,
+    "groups": 1
+   },
+   {
+    "size": 40,
+    "groups": 1
+   },
+   {
+    "size": 46,
+    "groups": 1
+   },
+   {
+    "size": 375,
+    "groups": 1
+   }
+  ]
+ },
+ "split": {
+  "random_state": 42,
+  "split_method": "StratifiedGroupKFold",
+  "n_splits": 5,
+  "selected_fold": 0,
+  "train_size": 14304,
+  "test_size": 3576,
+  "unique_text_groups": 15872,
+  "group_overlap": 0,
+  "target": "fraudulent",
+  "trainFraud": 693,
+  "trainTotal": 14304,
+  "testFraud": 173,
+  "testTotal": 3576
+ },
+ "modelComparison": {
+  "cvNote": "Group-aware 5-fold cross-validation on the training split (mean across folds). Text models use TF-IDF (1-2 grams).",
+  "models": [
+   {
+    "name": "Majority baseline (all genuine)",
+    "family": "baseline",
+    "note": "predicts every posting genuine",
+    "accuracy": 0.951552027140982,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "pr_auc": 0.048447972859017946,
+    "roc_auc": null,
+    "pr_auc_std": null,
+    "f1_std": null
+   },
+   {
+    "name": "Rule baseline (no profile & no logo)",
+    "family": "baseline",
+    "note": "5-fold CV mean; notebook output (no artifact CSV)",
+    "accuracy": 0.8692,
+    "balanced_accuracy": 0.7711,
+    "precision": 0.2188,
+    "recall": 0.6624,
+    "f1": 0.3287,
+    "pr_auc": 0.1616,
+    "roc_auc": 0.7711,
+    "pr_auc_std": 0.0155,
+    "f1_std": 0.017
+   },
+   {
+    "name": "Logistic Regression (unweighted)",
+    "family": "text",
+    "note": "",
+    "accuracy": 0.9667222326781921,
+    "balanced_accuracy": 0.6572096391187213,
+    "precision": 0.9953488372093023,
+    "recall": 0.3144927536231884,
+    "f1": 0.4705666401930205,
+    "pr_auc": 0.8804471576752742,
+    "roc_auc": 0.9830624881842486,
+    "pr_auc_std": 0.03614520248004286,
+    "f1_std": 0.10558371219438677
+   },
+   {
+    "name": "Logistic Regression (balanced)",
+    "family": "text",
+    "note": "proposal's main model",
+    "accuracy": 0.982802286842832,
+    "balanced_accuracy": 0.9190723603373379,
+    "precision": 0.8074174838236627,
+    "recall": 0.8485038056511313,
+    "f1": 0.8269553993527878,
+    "pr_auc": 0.9009514581997783,
+    "roc_auc": 0.986357810650329,
+    "pr_auc_std": 0.029171981107613,
+    "f1_std": 0.031214170612342693
+   },
+   {
+    "name": "Linear SVM (unweighted)",
+    "family": "text",
+    "note": "selected model",
+    "accuracy": 0.9832211339866006,
+    "balanced_accuracy": 0.8377450224169186,
+    "precision": 0.9673009947959601,
+    "recall": 0.6766656240225212,
+    "f1": 0.7944583400423604,
+    "pr_auc": 0.922576237595482,
+    "roc_auc": 0.986364125855842,
+    "pr_auc_std": 0.02353653339463825,
+    "f1_std": 0.04681968765425065
+   },
+   {
+    "name": "Linear SVM (balanced)",
+    "family": "text",
+    "note": "",
+    "accuracy": 0.9872064880243838,
+    "balanced_accuracy": 0.8919475011945547,
+    "precision": 0.9398268720446381,
+    "recall": 0.7864664789907204,
+    "f1": 0.8558785382364344,
+    "pr_auc": 0.9201992854883292,
+    "roc_auc": 0.986758457904801,
+    "pr_auc_std": 0.01993208917413513,
+    "f1_std": 0.02057001371193672
+   },
+   {
+    "name": "Multinomial Naive Bayes",
+    "family": "text",
+    "note": "",
+    "accuracy": 0.956096137347448,
+    "balanced_accuracy": 0.5578837210715257,
+    "precision": 0.8243075437071381,
+    "recall": 0.11694296736523824,
+    "f1": 0.2024135538906251,
+    "pr_auc": 0.47868837097973344,
+    "roc_auc": 0.9098808255786043,
+    "pr_auc_std": 0.07436811099990538,
+    "f1_std": 0.06931629247473933
+   },
+   {
+    "name": "Complement Naive Bayes",
+    "family": "text",
+    "note": "",
+    "accuracy": 0.9574242709405241,
+    "balanced_accuracy": 0.5927578218547439,
+    "precision": 0.714358056169377,
+    "recall": 0.18896882494004794,
+    "f1": 0.2952683862746793,
+    "pr_auc": 0.47868837097973344,
+    "roc_auc": 0.9098808255786043,
+    "pr_auc_std": 0.07436811099990538,
+    "f1_std": 0.09946647833276931
+   },
+   {
+    "name": "Metadata-only LR (scaled)",
+    "family": "metadata",
+    "note": "structured fields only · corrected scaling",
+    "accuracy": 0.896462359730448,
+    "balanced_accuracy": 0.8504567994284224,
+    "precision": 0.2924484460235429,
+    "recall": 0.79950995725159,
+    "f1": 0.4276234446562702,
+    "pr_auc": 0.5088404044827045,
+    "roc_auc": 0.9298497866414746,
+    "pr_auc_std": null,
+    "f1_std": null
+   },
+   {
+    "name": "Metadata GBM",
+    "family": "metadata",
+    "note": "gradient boosting on structured fields",
+    "accuracy": 0.9602208137894961,
+    "balanced_accuracy": 0.6017890027284591,
+    "precision": 0.8874210037198151,
+    "recall": 0.2049004274840997,
+    "f1": 0.3317814575883261,
+    "pr_auc": 0.5639262187693561,
+    "roc_auc": 0.9015886957705742,
+    "pr_auc_std": 0.04618084580031736,
+    "f1_std": 0.04218098560145172
+   },
+   {
+    "name": "Combined text + metadata LR (scaled)",
+    "family": "combined",
+    "note": "corrected scaling",
+    "accuracy": 0.9663027744712469,
+    "balanced_accuracy": 0.9220556548602168,
+    "precision": 0.6080056119034295,
+    "recall": 0.8730580752789073,
+    "f1": 0.715754140850328,
+    "pr_auc": 0.8458191385293372,
+    "roc_auc": 0.9843948389229384,
+    "pr_auc_std": null,
+    "f1_std": null
+   },
+   {
+    "name": "Combined LR, no missing indicators (scaled)",
+    "family": "combined",
+    "note": "shortcut ablation · corrected scaling",
+    "accuracy": 0.9676311769321208,
+    "balanced_accuracy": 0.9247964371570045,
+    "precision": 0.6194729235443046,
+    "recall": 0.8773641956000418,
+    "f1": 0.7251528959598011,
+    "pr_auc": 0.8504761814078643,
+    "roc_auc": 0.9847092484043912,
+    "pr_auc_std": null,
+    "f1_std": null
+   }
+  ]
+ },
+ "oofThresholds": [
+  {
+   "model": "Balanced Logistic Regression",
+   "threshold": 0.5797936139803015,
+   "precision": 0.8938193343898574,
+   "recall": 0.8138528138528138,
+   "f1": 0.851963746223066
+  },
+  {
+   "model": "Balanced Linear SVM",
+   "threshold": -0.17832187814209743,
+   "precision": 0.90625,
+   "recall": 0.836940836940837,
+   "f1": 0.870217554388098
+  },
+  {
+   "model": "Unweighted Linear SVM",
+   "threshold": -0.3040546139198351,
+   "precision": 0.9371900826446281,
+   "recall": 0.8181818181818182,
+   "f1": 0.873651771956359
+  }
+ ],
+ "finalTest": {
+  "metrics": {
+   "accuracy": 0.9835011185682326,
+   "balanced_accuracy": 0.8569122110888217,
+   "precision": 0.9253731343283582,
+   "recall": 0.7167630057803468,
+   "f1": 0.8078175895765473,
+   "pr_auc": 0.8517953391809086,
+   "roc_auc": 0.9778043514817765
+  },
+  "bootstrap": {
+   "accuracy": {
+    "est": 0.9835011185682326,
+    "lo": 0.9793064876957495,
+    "hi": 0.9874161073825504
+   },
+   "balanced_accuracy": {
+    "est": 0.8569122110888217,
+    "lo": 0.8238278803501884,
+    "hi": 0.8892687883140479
+   },
+   "precision": {
+    "est": 0.9253731343283582,
+    "lo": 0.8793033926585094,
+    "hi": 0.9661016949152542
+   },
+   "recall": {
+    "est": 0.7167630057803468,
+    "lo": 0.6516654477760787,
+    "hi": 0.7812589798850574
+   },
+   "f1": {
+    "est": 0.8078175895765473,
+    "lo": 0.7598537215472699,
+    "hi": 0.8519664277159048
+   },
+   "pr_auc": {
+    "est": 0.8517953391809086,
+    "lo": 0.809116742753558,
+    "hi": 0.8919927094959418
+   },
+   "roc_auc": {
+    "est": 0.9778043514817765,
+    "lo": 0.9675371785412873,
+    "hi": 0.986256075885574
+   }
+  }
+ },
+ "confusion": {
+  "tp": 124,
+  "fp": 10,
+  "tn": 3393,
+  "fn": 49,
+  "threshold": -0.3040546139198351
+ },
+ "features": {
+  "fraud": [
+   {
+    "feature": "profile description",
+    "coef": 2.3256922687299673
+   },
+   {
+    "feature": "below link",
+    "coef": 1.4795744042571397
+   },
+   {
+    "feature": "using below",
+    "coef": 1.4597621963966751
+   },
+   {
+    "feature": "data entry",
+    "coef": 1.403398661612644
+   },
+   {
+    "feature": "description apply",
+    "coef": 1.2856118893921984
+   },
+   {
+    "feature": "apply using",
+    "coef": 1.2775766120035614
+   },
+   {
+    "feature": "link",
+    "coef": 1.1634402261316383
+   },
+   {
+    "feature": "line requirements",
+    "coef": 1.132787169638089
+   },
+   {
+    "feature": "clerical",
+    "coef": 1.1080124122123909
+   },
+   {
+    "feature": "clerk",
+    "coef": 1.0574900288325129
+   },
+   {
+    "feature": "receptionist",
+    "coef": 1.030995890101836
+   },
+   {
+    "feature": "assistant accountant",
+    "coef": 0.9933567421720391
+   },
+   {
+    "feature": "title administrative",
+    "coef": 0.9540784544623759
+   },
+   {
+    "feature": "entry",
+    "coef": 0.950364844328211
+   },
+   {
+    "feature": "administrative",
+    "coef": 0.9412037144662192
+   },
+   {
+    "feature": "earn",
+    "coef": 0.9347572936361963
+   },
+   {
+    "feature": "wages",
+    "coef": 0.8945438758162193
+   },
+   {
+    "feature": "money",
+    "coef": 0.8775418850180027
+   },
+   {
+    "feature": "assistant",
+    "coef": 0.842200149041895
+   },
+   {
+    "feature": "offshore",
+    "coef": 0.8162079219936745
+   }
+  ],
+  "legit": [
+   {
+    "feature": "english",
+    "coef": -0.7623996259115892
+   },
+   {
+    "feature": "our",
+    "coef": -0.6340158398164728
+   },
+   {
+    "feature": "client",
+    "coef": -0.5951528966599443
+   },
+   {
+    "feature": "digital",
+    "coef": -0.5806473145079105
+   },
+   {
+    "feature": "experience",
+    "coef": -0.5761352078943698
+   },
+   {
+    "feature": "government offerings",
+    "coef": -0.5707992038055049
+   },
+   {
+    "feature": "amp government",
+    "coef": -0.5661125544525356
+   },
+   {
+    "feature": "of",
+    "coef": -0.5652007478532934
+   },
+   {
+    "feature": "web",
+    "coef": -0.5358838847917146
+   },
+   {
+    "feature": "software",
+    "coef": -0.535549939737325
+   },
+   {
+    "feature": "companies",
+    "coef": -0.5238547244401017
+   },
+   {
+    "feature": "in all",
+    "coef": -0.48906926438497533
+   },
+   {
+    "feature": "description our",
+    "coef": -0.48460101848146453
+   },
+   {
+    "feature": "growing",
+    "coef": -0.46899742933435834
+   },
+   {
+    "feature": "company in",
+    "coef": -0.46590589164700114
+   },
+   {
+    "feature": "with our",
+    "coef": -0.45178208693057337
+   },
+   {
+    "feature": "our clients",
+    "coef": -0.44945713672064613
+   },
+   {
+    "feature": "custom",
+    "coef": -0.4457787267492835
+   },
+   {
+    "feature": "our client",
+    "coef": -0.4455809764101434
+   },
+   {
+    "feature": "recruitment",
+    "coef": -0.44144584048292057
+   }
+  ]
+ },
+ "country": [
+  {
+   "code": "US",
+   "postings": 2103,
+   "fraud": 142,
+   "fraudRate": 0.06752258678078935,
+   "recall": 0.6901408450704225,
+   "precision": 0.9333333333333333
+  },
+  {
+   "code": "GB",
+   "postings": 507,
+   "fraud": 3,
+   "fraudRate": 0.005917159763313609,
+   "recall": 0.3333333333333333,
+   "precision": 1.0
+  },
+  {
+   "code": "GR",
+   "postings": 190,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "CA",
+   "postings": 92,
+   "fraud": 5,
+   "fraudRate": 0.05434782608695652,
+   "recall": 1.0,
+   "precision": 1.0
+  },
+  {
+   "code": "Unknown",
+   "postings": 76,
+   "fraud": 6,
+   "fraudRate": 0.07894736842105263,
+   "recall": 0.8333333333333334,
+   "precision": 0.8333333333333334
+  },
+  {
+   "code": "NZ",
+   "postings": 67,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "DE",
+   "postings": 57,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "IN",
+   "postings": 53,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "AU",
+   "postings": 37,
+   "fraud": 6,
+   "fraudRate": 0.16216216216216217,
+   "recall": 0.8333333333333334,
+   "precision": 0.8333333333333334
+  },
+  {
+   "code": "NL",
+   "postings": 29,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "BE",
+   "postings": 28,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "PH",
+   "postings": 27,
+   "fraud": 1,
+   "fraudRate": 0.037037037037037035,
+   "recall": 1.0,
+   "precision": 1.0
+  },
+  {
+   "code": "IE",
+   "postings": 20,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "HK",
+   "postings": 19,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "RO",
+   "postings": 18,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "EE",
+   "postings": 16,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "IL",
+   "postings": 15,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "SE",
+   "postings": 15,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "SG",
+   "postings": 14,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "ZA",
+   "postings": 13,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "AE",
+   "postings": 12,
+   "fraud": 1,
+   "fraudRate": 0.08333333333333333,
+   "recall": 1.0,
+   "precision": 1.0
+  },
+  {
+   "code": "EG",
+   "postings": 12,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "FR",
+   "postings": 12,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "ES",
+   "postings": 12,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "PL",
+   "postings": 10,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "BR",
+   "postings": 9,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "IT",
+   "postings": 8,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "DK",
+   "postings": 7,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "KR",
+   "postings": 7,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "SA",
+   "postings": 6,
+   "fraud": 1,
+   "fraudRate": 0.16666666666666666,
+   "recall": 0.0,
+   "precision": 0.0
+  },
+  {
+   "code": "FI",
+   "postings": 6,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "JP",
+   "postings": 5,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "HU",
+   "postings": 5,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "MX",
+   "postings": 5,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "MY",
+   "postings": 5,
+   "fraud": 4,
+   "fraudRate": 0.8,
+   "recall": 1.0,
+   "precision": 1.0
+  },
+  {
+   "code": "CY",
+   "postings": 4,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "BG",
+   "postings": 4,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "MT",
+   "postings": 4,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "LT",
+   "postings": 4,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "PK",
+   "postings": 4,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "LU",
+   "postings": 3,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "TR",
+   "postings": 3,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "QA",
+   "postings": 3,
+   "fraud": 2,
+   "fraudRate": 0.6666666666666666,
+   "recall": 1.0,
+   "precision": 0.6666666666666666
+  },
+  {
+   "code": "BH",
+   "postings": 2,
+   "fraud": 1,
+   "fraudRate": 0.5,
+   "recall": 1.0,
+   "precision": 1.0
+  },
+  {
+   "code": "CN",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "PA",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "CZ",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "IQ",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "AT",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "PT",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "UA",
+   "postings": 2,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "JM",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "BY",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "AM",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "ID",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "AR",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "MU",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "NG",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "NO",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "KZ",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "RS",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "SD",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "RU",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  },
+  {
+   "code": "TW",
+   "postings": 1,
+   "fraud": 1,
+   "fraudRate": 1.0,
+   "recall": 1.0,
+   "precision": 1.0
+  },
+  {
+   "code": "TH",
+   "postings": 1,
+   "fraud": 0,
+   "fraudRate": 0.0,
+   "recall": null,
+   "precision": 0.0
+  }
+ ],
+ "companyProfile": [
+  {
+   "status": "Missing",
+   "postings": 645,
+   "fraud": 117,
+   "fraudRate": 0.1813953488372093,
+   "recall": 0.6068376068376068,
+   "precision": 0.9102564102564102
+  },
+  {
+   "status": "Present",
+   "postings": 2931,
+   "fraud": 56,
+   "fraudRate": 0.019106107130672127,
+   "recall": 0.9464285714285714,
+   "precision": 0.9464285714285714
+  }
+ ],
+ "errors": {
+  "counts": {
+   "Correct": 3517,
+   "False Positive": 10,
+   "False Negative": 49
+  },
+  "falsePositives": [
+   {
+    "title": "DATA ENTRY CLERK SPECIALIST",
+    "location": "US, MN, South St. Paul",
+    "score": 0.3996987110421265,
+    "profile": "Missing",
+    "snippet": "Data Entry Clerk Specialist serves to support the Director of Operatuions within the Administrative or other areas as assigned in a Deputy Registrar's office of the Department of Motor Vehicles."
+   },
+   {
+    "title": "Writing Job",
+    "location": "US, NY, New York City",
+    "score": 0.25231465965512856,
+    "profile": "Missing",
+    "snippet": "We are a company looking for qualified individuals to help out with writing tasks such as:- short stories- movie scripts- magazines- ebooks- articles- news feeds- blog posts- PR websites… and more. Job Duties Include:-…"
+   },
+   {
+    "title": "Receptionist/Executive Assistant",
+    "location": "",
+    "score": -0.15632000005481872,
+    "profile": "Present",
+    "snippet": "Receptionist/AssistantThis is a 3-6 months temp-to-hire position. The receptionist/Assistant is responsible for office support and administrative functions. This position will also require handling part-time sales…"
+   },
+   {
+    "title": "Entry Level Accounting Specialist",
+    "location": "US, FL, Fort Lauderdale",
+    "score": -0.20354374990718604,
+    "profile": "Missing",
+    "snippet": "We have an immediate opening for an Accounting Specialist to manage day to day facility accounting duties. The ideal candidate will be in the accounting field looking to take the next step of career…"
+   },
+   {
+    "title": "PROJECT MANAGER",
+    "location": "US, TX, HOUSTON",
+    "score": -0.2118056991551477,
+    "profile": "Missing",
+    "snippet": "we are looking for a Project Manager. The Project Manager works within the Project Management Department, which is responsible for the management of offshore projects, executed for major oil and gas exploration…"
+   },
+   {
+    "title": "Administrative Assistant",
+    "location": "US, , Shawnee",
+    "score": -0.2557644785914581,
+    "profile": "Missing",
+    "snippet": "Open/close office, manage phones, greet and direct visitor'sProvide one-on-one assistance to the President of companyMaintain calendars and appointment schedulesOversight & reporting of A/R and accounts payableGeneral…"
+   },
+   {
+    "title": "Urgent Requirement :iOS Developer for Qatar",
+    "location": "QA, DA,",
+    "score": -0.26530375822062746,
+    "profile": "Present",
+    "snippet": "Greetings from VAM SYSTEMS…..VAM SYSTEMS is a Business Consulting, IT Solutions and Services company with operations in UAE, Qatar, Bahrain, USA, Australia, Singapore & India. We offers a comprehensive list of services…"
+   },
+   {
+    "title": "Admin Assistant",
+    "location": "AU, NSW, Sydney",
+    "score": -0.27056700406156264,
+    "profile": "Missing",
+    "snippet": "This is an ideal position for a student who is looking for a flexible part time position and who is looking to gain some hands on skills with an established international brand, or for someone looking for steady,…"
+   },
+   {
+    "title": "Executive Administrative Assistant",
+    "location": "US, VA, Arlington",
+    "score": -0.2708897947345267,
+    "profile": "Missing",
+    "snippet": "The Executive Assistant shall be responsible for providing administrative support services as well as guidance and program supportwithin a variety of administrative, analytical and financial related functions. Executive…"
+   },
+   {
+    "title": "Administrative Assistant",
+    "location": "US, FL, Jacksonville",
+    "score": -0.2744443712939214,
+    "profile": "Present",
+    "snippet": "Our customer is providing something new in Healthcare. Something based on what is best for the patient. Imagine being able to walk into a medical facility and being immediately received by someone who cares about the…"
+   }
+  ],
+  "falseNegatives": [
+   {
+    "title": "Quant Analyst",
+    "location": "GB, LND, London",
+    "score": -1.1545329875851302,
+    "profile": "Missing",
+    "snippet": "Our client is an award winning High-Frequency Prop. Trading firm specializing in trading Fixed Income, Equity, and oil options looking for an experience Quant. They're based in the city, and they're looking for a Quant…"
+   },
+   {
+    "title": "Urgent Requirement For The Position Technical Lead - Rhomobile Technical Mobility Lead Developer",
+    "location": "US, CA,",
+    "score": -1.0126753571402178,
+    "profile": "Missing",
+    "snippet": "1. Technical Lead - Rhomobile Technical Mobility Lead Developer NOTES- In case if Rhomobile is difficult to find, Please find people with expertise in Android development with, DOJO, CSS Location: San Francisco/ San…"
+   },
+   {
+    "title": "Final Expense Agent",
+    "location": "US, ,",
+    "score": -0.9804349792285516,
+    "profile": "Missing",
+    "snippet": "Normal 0 false false false EN-US X-NONE X-NONE /* Style Definitions */ #URL_22932ad710cc8bab5012d10e1dc768a71064c391fef21e0fceddb0e7a66f97b6#{mso-style-name:\"Table…"
+   },
+   {
+    "title": "Resources Change Management, Process Excellence and Change Enablement Manager",
+    "location": "US, TX, Houston",
+    "score": -0.9066156823633178,
+    "profile": "Missing",
+    "snippet": "Change Management professionals provide knowledge and experience related to the skills, structures, tools and support mechanisms needed to manage change and to foster an environment conducive to sustaining that…"
+   },
+   {
+    "title": "Forward Cap.",
+    "location": "",
+    "score": -0.9014205374474943,
+    "profile": "Missing",
+    "snippet": "The group has raised a fund for the purchase of homes in the Southeast. The student on this project will help them build their investments from the ground up and will help with the analysis and modeling of their…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, NY, MANHATTAN",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, FL, orlando",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, FL, TAMPA",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, CA, san fransisco",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, MA, BOSTON",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, TX, DALLAS",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, TX, HOUSTON",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, PA, philadelphia",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, CA, orange county",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, NY, NEWYORK CITY",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, TX, DALLAS",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, CA, san diego",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, CA, LOS ANGELES",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, GA, ATLANTA",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, IL, CHICAGO",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, CO, denver",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, NY, MANHATTAN",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, FL, fort lauderdale",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, NV, LAS VEGAS",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, AZ, PHOENIX",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Cruise Staff Wanted *URGENT*",
+    "location": "US, FL, MIAMI",
+    "score": -0.8926625503230023,
+    "profile": "Missing",
+    "snippet": "6* Ultra Luxury American Cruise Company is urgently looking for the following positions:*Hospitality - For the many Bars & Restaurants on board.*Retail - For the Duty FREE Shops & Boutiques on board.*housekeeping - For…"
+   },
+   {
+    "title": "Job for freelancer working in Saudi Arabia",
+    "location": "SA, 01, Murabba Riyadh",
+    "score": -0.8665960207966723,
+    "profile": "Missing",
+    "snippet": "Hundreds of Freelance Jobs available every month for freelance designers, developers, writers and bloggers. Part of SaudiLancer - the most popular Freelance Blog and Community online |…"
+   },
+   {
+    "title": "Data Entry Representative",
+    "location": "US, TX, AUSTIN",
+    "score": -0.792961335363953,
+    "profile": "Present",
+    "snippet": "Responsible for reviewing details of tickets to ensure they contain the data required by customers.Monitors the bin movements to ensure the activity seen matches the paperwork providedWatches contract levels vs volume…"
+   },
+   {
+    "title": "Structural Designer",
+    "location": "US, TX, Houston",
+    "score": -0.7929182200667,
+    "profile": "Missing",
+    "snippet": "Typical Responsibilities:Involved in process development activities for functional groups or projects.Prepares complex layouts, 3D models & 2D design, fabrication or installation drawings requiring non-standard…"
+   },
+   {
+    "title": "Hiring for Software Web Applications Engineer",
+    "location": "US, RI, Middletown",
+    "score": -0.7252277367457249,
+    "profile": "Missing",
+    "snippet": "Position :Software Web Applications EngineerJob Type : Full TimeJob Location : United States-Rhode Island-MiddletownUs work status required : EAD ,Green Card,US Citizens Job Requirements:• Minimum of five years recent…"
+   },
+   {
+    "title": "Customer Service Representative",
+    "location": "US, TX, SAN ANTONIO",
+    "score": -0.6917195528748897,
+    "profile": "Missing",
+    "snippet": "SUMMARYResponsible for acting as a liaison between customers and companies. Assists with complaints, orders, errors, account questions, billing, cancelations, and other…"
+   },
+   {
+    "title": "COMPANY REPRESENTATIVE NEEDED",
+    "location": "US, NY, mumford",
+    "score": -0.6838815240030953,
+    "profile": "Missing",
+    "snippet": "Our motherless world for Charity location has an immediate part-time opening for a Company Representative. Must be available weekdays and weekends. Wage: $10 per hour. Must be at least 18 years old. Must have some…"
+   },
+   {
+    "title": "Sales associate Home Security",
+    "location": "US, IL, chicago",
+    "score": -0.6822973344732481,
+    "profile": "Missing",
+    "snippet": "Sales (inside/outside)Data compilation of prospective sales leads. These leads usually come from various sources that we provide and those such as business directories, prospecting, and web sites to name a few. Sales…"
+   },
+   {
+    "title": "Customer  Service Position",
+    "location": "US, NY, newyork",
+    "score": -0.6724216903739333,
+    "profile": "Missing",
+    "snippet": "Answers customer/client requests or inquiries concerning servicesResponsible for improving customer retention through programs and service provided to the customerContinually maintain working knowledge of all company…"
+   },
+   {
+    "title": "Customer service/ Data Entry",
+    "location": "US, AL,  ALEXANDER CITY",
+    "score": -0.6379383396964624,
+    "profile": "Missing",
+    "snippet": "Customer Service SpecialistWe are currently looking for talented and creative individuals to continue growing the company. If you're looking to work in an organization where you can make a long-term home, and flex both…"
+   },
+   {
+    "title": "Data Center Migration App Lead for FULL-TIME Opportunity.",
+    "location": "US, PA, Harrisburg",
+    "score": -0.636410514630422,
+    "profile": "Missing",
+    "snippet": "Data Center Migration Application Lead / Architect – must have prior large data center and applications migrations experience10-15 Years of Experience / 10+Years of experience in infrastructure /data center /application…"
+   },
+   {
+    "title": "Administrative Position",
+    "location": "AU, QLD,",
+    "score": -0.6206656099180557,
+    "profile": "Missing",
+    "snippet": "International private equity looking for an administrative assistant to be part of a great team! This executive assistant must have experience with heavy calendar management and travel experience. The ideal candidate…"
+   },
+   {
+    "title": "Dispatcher",
+    "location": "US, TX, AUSTIN",
+    "score": -0.6102320980931393,
+    "profile": "Present",
+    "snippet": "We currently have an opening for a Dispatcher to coordinate the activities of drivers to maximize productivity, while assuring prompt and effective service to customers. Your job responsibilities may include:Provide…"
+   },
+   {
+    "title": "Oil/Gas Technical Manager",
+    "location": "US, TX, Houston",
+    "score": -0.6037202909325861,
+    "profile": "Missing",
+    "snippet": "Job Description:SENIOR MANAGER OF MAINTENANCE - SENIOR TECHNICAL MANAGER The Senior Technical Manager (STM) reports to the Director, Repair and Maintenance and provides leadership and support for all Technical Services…"
+   },
+   {
+    "title": "Administrative Assistant",
+    "location": "US, TX, Dallas",
+    "score": -0.5775521785615398,
+    "profile": "Present",
+    "snippet": "We are currently looking for someone , responsible, energetic, trustworthy and motivated to learn the industry. You will be required to handle a wide variety of tasks so the ability to multitask and follow up is a must.…"
+   },
+   {
+    "title": "Informatica/ Etl Tester",
+    "location": "US, VA, Herndon",
+    "score": -0.5548261668499895,
+    "profile": "Missing",
+    "snippet": "Position: Informatica Tester Location: Herndon, VA Duration : Long term Job Description :Good in InformaticaGood knowledge in ETL Testing and UnixGood in SQL and data warehouse conceptsShould have 6+ Years of…"
+   },
+   {
+    "title": "Senior Geologist",
+    "location": "US, TX, Houston",
+    "score": -0.546872866774303,
+    "profile": "Missing",
+    "snippet": "Job DescriptionCompany Overview:INTECSEA is a global company within the WorleyParsons Group and offers all the Group’s capabilities for floating systems, offshore pipelines and subsea production systems. Combined with…"
+   },
+   {
+    "title": "Graphite Expert (Remote Position)",
+    "location": "US, CA, San Francisco",
+    "score": -0.5088661214149489,
+    "profile": "Missing",
+    "snippet": "Position: Graphite ExpertLocation: San Francisco, CADuration: 3 months contractWe have an urgent need for a Graphite expert Should be able to setup a highly scalable graphite environment."
+   },
+   {
+    "title": "Administration",
+    "location": "GB, LND, london",
+    "score": -0.46905366759399575,
+    "profile": "Missing",
+    "snippet": "We are looking for workers with the suitble responsibilities.Assist with preparation of the budgetImplement financial policies and proceduresPrepare and reconcile general bank statementsEstablish and maintain supplier…"
+   },
+   {
+    "title": "Oil/Gas Asset Manager",
+    "location": "US, TX, Houston",
+    "score": -0.45236266536071457,
+    "profile": "Missing",
+    "snippet": "Position SummaryThe Asset Manager will plan, develop and execute on a wide variety of projects, across a number of functional areas including Technical Services, Operations, and Maintenance. This person will provide…"
+   },
+   {
+    "title": "Customer Service Representative",
+    "location": "US, TX, SAN ANTONIO",
+    "score": -0.4428017085646039,
+    "profile": "Missing",
+    "snippet": "SUMMARYResponsible for acting as a liaison between customers and companies. Assists with complaints, orders, errors, account questions, billing, cancelations, and other queries.PRIMARY RESPONSIBILITIESResolve customer…"
+   },
+   {
+    "title": "No Scams--Legitimate Work From Home Jobs",
+    "location": "US, NY, New York",
+    "score": -0.4235506531717159,
+    "profile": "Missing",
+    "snippet": "Times are tough! 5.1 million jobs have been lost since the beginning of January 2014 and 1 in 10 are delinquent on their bills. Almost everyone has great concern over their financial future. Would you like to hear a…"
+   },
+   {
+    "title": "Entry Level Medical Transcriptionist",
+    "location": "US, CA, Los Angeles",
+    "score": -0.3897435700842901,
+    "profile": "Missing",
+    "snippet": "We need a Medical Transcriptionist who will transcribe reports recorded by physicians and other healthcare practitioners. The types of documents include items such as, letters, chart notes and reports. You will work…"
+   },
+   {
+    "title": "Hiring for SAP Supply Chain Manager",
+    "location": "US, WA, Bellevue",
+    "score": -0.350111325274552,
+    "profile": "Missing",
+    "snippet": "Position :Manager, Business Solutions-SAP/Supply ChainJob Type : Full TimeJob Location : United States-Washington–BellevueUs work status required : EAD ,Green Card,US Citizens Job Requirements:Minimum of 6+ years in an…"
+   }
+  ]
+ },
+ "model": {
+  "name": "Unweighted Linear SVM",
+  "threshold": -0.3040546139198351,
+  "vocab": 100000
+ }
+}

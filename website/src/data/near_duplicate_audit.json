@@ -1,0 +1,34 @@
+{
+ "note": "post-hoc; no model/threshold/metric changed",
+ "test_rows": 3576,
+ "test_fraud": 173,
+ "cutoffs": {
+  "0.8": {
+   "test_rows_with_near_copy": 1632,
+   "fraud_with": 61,
+   "fraud_without": 112,
+   "recall_with": 1.0,
+   "recall_without": 0.5625,
+   "caught_with": 61,
+   "caught_without": 63
+  },
+  "0.9": {
+   "test_rows_with_near_copy": 1221,
+   "fraud_with": 50,
+   "fraud_without": 123,
+   "recall_with": 1.0,
+   "recall_without": 0.6016,
+   "caught_with": 50,
+   "caught_without": 74
+  },
+  "0.95": {
+   "test_rows_with_near_copy": 990,
+   "fraud_with": 42,
+   "fraud_without": 131,
+   "recall_with": 1.0,
+   "recall_without": 0.626,
+   "caught_with": 42,
+   "caught_without": 82
+  }
+ }
+}
