@@ -250,7 +250,7 @@ Recall is likely optimistic for genuinely new postings.
 | Building the website and its in-browser model |
 | Writing and editing documentation, including this README |
 
-| Checked by us |
+| Checked by us together |
 |---|
 | Split: zero group overlap, re-derived by `src/verify_split.py` |
 | Every number on the website matches `results/` (`npm run audit`) |
