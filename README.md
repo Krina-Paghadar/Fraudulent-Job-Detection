@@ -8,7 +8,7 @@
 | Krina Hitendrakumar Paghadar | 24110169 |
 | Siya Kothari | 24110167 |
 
-**Website:** https://krina-paghadar.github.io/Fraudulent-Job-Detection/
+**Website:** https://krina-paghadar.github.io/Fraudulent-Job-Detection/  
 **Repository:** https://github.com/Krina-Paghadar/Fraudulent-Job-Detection
 
 ---
